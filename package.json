@@ -1,0 +1,37 @@
+{
+  "name": "medidaz-api",
+  "version": "1.0.0",
+  "description": "Public api to Medidaz",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medidaz/api.git"
+  },
+  "keywords": [
+    "medida",
+    "comida",
+    "alimento",
+    "food",
+    "home",
+    "caseira"
+  ],
+  "author": "Kleyson Prado",
+  "bugs": {
+    "url": "https://github.com/medidaz/api/issues"
+  },
+  "homepage": "https://github.com/medidaz/api#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "consign": "^0.1.2",
+    "express": "^4.13.4",
+    "sequelize": "^3.23.2",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0"
+  }
+}
