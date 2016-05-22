@@ -1,10 +1,10 @@
 module.exports = app =>{
     
-    const Alimentos = app.db.models.Alimentos;
+    const Alimento = app.db.models.Alimento;
     
-    app.get("/alimentos", (req, res)=>{
+    app.get("/api/alimentos", (req, res)=>{
         
-        Alimentos.findAll({}).then( alimentos => {
+        Alimento.findAll({}).then( alimentos => {
             res.json({alimentos:alimentos});            
         } );
     });
