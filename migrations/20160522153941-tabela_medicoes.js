@@ -48,6 +48,6 @@ module.exports = {
   },
 
   down: function (queryInterface, Sequelize) {
-    return queryInterface.dropTable('fontes');
+    return queryInterface.dropTable('medicoes');
   }
 };

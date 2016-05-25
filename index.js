@@ -5,8 +5,8 @@ const app = express();
 
 consign()
     .include("db.js")
-    .then("bootstrap/middlewares.js")
+    .then("config/middlewares.js")
     .then("routes")
-    .then("bootstrap/boot.js")
+    .then("config/boot.js")
     .into(app);
     

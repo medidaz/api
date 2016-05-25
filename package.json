@@ -43,6 +43,7 @@
     "babel-cli": "^6.9.0",
     "babel-eslint": "^6.0.4",
     "eslint": "^2.10.2",
+    "nodemon": "^1.9.2",
     "sequelize-cli": "^2.4.0"
   }
 }
