@@ -22,27 +22,35 @@ module.exports = {
       }
       , fonte_id: {
         type: Sequelize.INTEGER,
-        references:{
+        references: {
           model: 'fontes',
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMEDIATE
-        }
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
+
       }
       , medida_id: {
         type: Sequelize.INTEGER,
-        references:{
+        references: {
           model: 'medidas',
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMEDIATE
-        }
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
+
       }
       , alimento_id: {
         type: Sequelize.INTEGER,
-        references:{
+        references: {
           model: 'alimentos',
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMEDIATE
-        }
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       }
     });
   },
