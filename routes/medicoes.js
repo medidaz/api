@@ -4,7 +4,7 @@ module.exports = app => {
     app.get("/api/medicoes/alimento/:id", (req, res) => {
         Medicoes.findAll({
             where: { 
-                descricao: req.params.id
+                alimento_id: req.params.id
             }
         }).then(medicoes => {
             res.json({ medicoes: medicoes });
