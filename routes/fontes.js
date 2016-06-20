@@ -15,6 +15,17 @@ module.exports = app => {
         });
     });
 
+    app.get("/v1/fonte/:id", (req, res) => {
+        Fonte.findAll({
+            include: [{ all: true, nested: true }],
+            where: {
+                id: req.params.id
+            }
+        }).then(fonte => {
+            res.json({ fonte: fonte });
+        });
+    });
+    
     app.post("/v1/fonte/search", (req, res) => {
         Fonte.findAll({
             where: {
