@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon --exec npm run start",
-    "start": "babel-node index.js",
-    "register": "node -r babel-register index.js"
+    "start_pm2": "babel-node index.js",
+    "start": "node -r babel-register index.js"
   },
   "repository": {
     "type": "git",
