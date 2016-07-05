@@ -16,11 +16,6 @@
     "protocol": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": null,
-    "database": "medidaz_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres",
-    "protocol": "postgres"
+    "use_env_variable": "DATABASE_URL"
   }
 }
