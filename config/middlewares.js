@@ -6,7 +6,7 @@ import helmet from "helmet";
 
 module.exports = app => {
   app.set("json spaces", 4);
-  app.set("port", 3000);
+  app.set("port",process.env.PORT || 3000);
   app.use(helmet());
   app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"],
